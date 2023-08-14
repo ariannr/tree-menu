@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const { Sider } = Layout;
 
-const CustomLayout = ({ children }) => {
+const CustomLayout = () => {
   return (
     <Layout style={{ minHeight: "100vh" }}>
       <Sider width={200} theme="dark">
@@ -19,7 +19,7 @@ const CustomLayout = ({ children }) => {
               <Link to="/dashboard2">Dashboard 2</Link>
             </Menu.Item>
           </Menu.SubMenu>
-          //first//
+          //////////
           <Menu.SubMenu key="users" title="Users">
             <Menu.Item key="userList">
               <Link to="/users">User List</Link>
@@ -27,7 +27,7 @@ const CustomLayout = ({ children }) => {
             <Menu.Item key="addUser">
               <Link to="/users/add">Add User</Link>
             </Menu.Item>
-            //second//
+            ////////////
             <Menu.SubMenu key="userActions" title="User Actions">
               <Menu.Item key="editUser">
                 <Link to="/users/edit">Edit User</Link>
